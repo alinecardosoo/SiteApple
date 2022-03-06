@@ -1,0 +1,24 @@
+
+    <dtml-if id>
+        
+        <b>id:</b> <br>
+        <dtml-var id>
+        <br><br>
+
+    </dtml-if>
+
+    <dtml-if title>
+        
+        <b>title:</b> <br>
+        <dtml-var title>
+        <br><br>
+
+    </dtml-if>
+
+    <dtml-if content>
+
+        <b>content:</b><br>
+        <dtml-var content>
+        <br><br>
+
+    </dtml-if>

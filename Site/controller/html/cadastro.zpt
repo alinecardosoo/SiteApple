@@ -1,0 +1,41 @@
+<div metal:use-macro="template/main/Template/macros/page"> 
+<div metal:fill-slot="main_content">
+  <body bgcolor="#FFFFFF">
+
+<br>
+<br>
+<center>
+        <h1 class="capa">
+            <b>Cadastro<br>
+            </b>
+        </h1>
+        <center>
+            <h3 class="subiphone">Cadastrar produto</h3>
+        </center>
+   <hr width="70%">
+    </center>
+
+    <div class="container"> 
+
+   <div class="card" style="width: 100%;">
+  <div class="card-body">
+
+  <form action="add_cadastro">
+
+  Nome do produto: <br> <input type="text" name="nome" size="30"> <br>
+  <br>
+  Descricao:<br> <input type="text" name="detalhes" size="30"><br>
+  <br>
+  Preco:<br> <input type="text" name="preco" size="30"> <br>
+  <br>
+  <div class="cadastro">  
+  <input class="btn btn-primary" type="submit" value="Cadastrar"><br>
+  </div>
+  </form> 
+
+    </div>
+  </div> 
+  </div>
+  </body>
+</div>
+</div>

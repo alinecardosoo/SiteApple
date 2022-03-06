@@ -1,0 +1,8 @@
+
+<div metal:define-macro="rodape" tal:omit-tag="">
+
+	<footer>
+		
+	</footer>
+
+</div>

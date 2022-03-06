@@ -1,0 +1,23 @@
+<html>
+    <head>
+    <title>Add minimal instance</title>
+    </head>
+
+    <body bgcolor="#FFFFFF">
+       <form name="form" action="manage_addminimalAction" method="post"><br>
+         id:<br>
+         <input type="text" name="id:string" size="30" value="minimal">
+         <br><br>
+
+         title:<br>
+         <input type="text" name="title:string" size="30" value="Title here">
+         <br><br>
+
+         content:<br>
+         <textarea name="content:text" cols="40" rows="8" wrap="virtual">Content here.</textarea>
+         <br><br>
+         <input type="submit" value="add">
+        
+        </form>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<div metal:define-macro="selectavaliacao"> 
+
+<center>
+<h3 class="capa">
+            <b>Avaliacoes de clientes </b>
+         <br>
+         <hr width="70%"> 
+         </h3>
+</center>
+<br>    
+<br>
+
+ <div tal:repeat="a context/avaliations"> 
+
+<br>
+
+  <div class="card" style="width: 100%;">
+  <div class="card-body">
+
+<br>
+<br>
+
+<h3 class="subavaliacao" tal:content="a/nome_complete"> </h3> <br>
+
+
+<h4 class="capa" tal:content="a/opinioes">
+
+</h4>
+
+<br>
+        </div>
+       </div>
+       </div>
+
+<br>
+<br>
+      </div>    
+<br>

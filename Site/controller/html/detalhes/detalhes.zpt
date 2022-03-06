@@ -1,0 +1,59 @@
+<div metal:use-macro="template/main/Template/macros/page"> 
+<div metal:fill-slot="main_content">
+<body>
+
+    <img src="/siteappleZPT/img/imgprod" alt="" height="70%" width="100%">
+    <br>
+    <br>
+    <center>
+        <h1 class="capa">
+            <b>Informacoes do Produto<br>
+            </b>
+        </h1>
+
+   <hr width="70%">
+    </center>
+    <br>
+
+    <div class="container">
+
+   <div tal:repeat="a options/d"> 
+
+  <div class="card" style="width: 100%;">
+  <div class="card-body">
+  
+<center>
+
+<h2 class="infoproduto" tal:content="a/nome"> </h2> 
+
+</center>
+<br>
+
+<p tal:content="a/detalhes"> </p>
+
+<br>
+
+ <h6> Preco: <span tal:content="a/preco"> </span> </h6>
+   <br>
+
+<div>
+     <h5> ID Produto - <span tal:content="a/id_produto"> </span> </h5>
+      </div> 
+         
+       
+          </div>
+       </div>
+   </div>        
+
+<br>
+
+<!-- Avaliacoes --> 
+
+<br>
+<br>
+ <div metal:use-macro="template/main/ins_avaliacao/macros/insertavaliacao"> </div> 
+
+  </div>     
+</body>
+</div>
+</div>

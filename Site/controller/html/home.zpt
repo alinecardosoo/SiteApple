@@ -1,0 +1,48 @@
+<div metal:use-macro="template/main/Template/macros/page"> 
+<div metal:fill-slot="main_content">
+  <body>
+    <img src="/siteappleZPT/img/imgprod" alt="" height="70%" width="100%">
+    <br>
+    <br>
+    <center>
+        <h2 class="subiphone">
+            <b>Descubra um mundo de experiencias incriveis.<br>
+                So na Apple. </b>
+        </h2>
+    </center>
+    <br>
+    <br>
+    <center>
+        <h1 class="iphoneh">
+            <b>iPhone 13 Pro
+            </b>
+        </h1><br>
+        <a class="btn btn-primary btn-lg" href="main/product"> Ver produto</a><br>
+        <img src="/siteappleZPT/img/imgiphoneh" alt="" height="50%" width="50%">
+        <hr width="70%"><br>
+        <center>
+            <h1 class="iphoneh">
+                <b>Apple Watch Series 7
+                </b>
+            </h1>
+            <br>
+            <a class="btn btn-primary btn-lg" href="main/product">Ver produto</a>
+            <br>
+            <br>
+            <img src="/siteappleZPT/img/imgwatchh" alt="" height="50%" width="50%">
+            <hr width="70%"><br>
+        </center>
+        <center>
+            <h1 class="iphoneh">
+                <b>MacBook Pro
+                </b>
+            </h1><br>
+            <a class="btn btn-primary btn-lg" href="main/product">Ver produto</a><br>
+            <br>
+            <img src="/siteappleZPT/img/imgmach" alt="" height="50%" width="50%">
+            <br>
+        </center>
+
+  </body>
+</div>
+</div>

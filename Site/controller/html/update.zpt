@@ -1,0 +1,42 @@
+<div metal:use-macro="template/main/Template/macros/page"> 
+<div metal:fill-slot="main_content">
+<center>
+        <h1 class="capa">
+            <b>Editar<br>
+            </b>
+        </h1>
+        <center>
+            <h3 class="subiphone">Editar produto</h3>
+        </center>
+   <hr width="70%">
+    </center>
+
+    <div class="container">
+
+   <div class="card" style="width: 100%;">
+   <div class="card-body">
+
+  <form action="edit">
+  
+  <div tal:repeat="b options/edit_select">
+  
+  <input type="hidden" name="id_produto" tal:attributes="value b/id_produto"> <br> 
+
+  Nome do produto: <br> <input type="text" name="nome" size="30" tal:attributes="value b/nome"> <br>
+  <br>
+  Descricao:<br> <input type="text" name="detalhes" size="30" tal:attributes="value b/detalhes"><br>
+  <br>
+  Preco:<br> <input type="text" name="preco" size="30" tal:attributes="value b/preco"><br>
+  <br>
+</div> 
+
+<div class="cadastro">  
+<input class="btn btn-primary" type="submit" value="Salvar"><br>
+  </div>
+
+</form> 
+  </div>
+ </div>
+</div>
+</div>
+</div>

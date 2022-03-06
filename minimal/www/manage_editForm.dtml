@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Manage minimal</title>
+    </head>
+    <body bgcolor="#FFFFFF">
+
+        <dtml-var manage_tabs>
+
+        <form name="form" action="manage_editAction" method="post"><br>
+
+            title:<br>
+            <input type="text" name="title:string" size="30" value="<dtml-var title>">
+            <br><br>
+
+            content:<br>
+            <textarea name="content:text" cols="40" rows="8" wrap="virtual"> <dtml-var content> </textarea>
+                <br><br>
+
+            <input type="submit" value="Change" name="manage_editAction:method">
+
+        </form>
+
+    </body>
+</html>

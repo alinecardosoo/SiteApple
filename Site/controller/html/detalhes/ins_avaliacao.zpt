@@ -1,0 +1,55 @@
+<div metal:define-macro="insertavaliacao">
+
+<center>
+<h1 class="capa">
+            <b>Avaliacoes<br>
+            </b>
+        </h1> 
+        
+            <h3 class="subavaliacao">Avalie nossos produtos</h3>
+        
+   <hr width="70%">
+    </center>
+
+<br>
+ <div class="row">
+ <div class="col-8"> 
+
+<div class="card" style="width: 70%;">
+  <div class="card-body">
+
+  <form action="add_avaliation">
+
+
+  <input type="hidden" name="id_produto" tal:attributes="value options/id_produto" <br>  
+
+  Digite seu nome completo: <br> <input type="text" name="nome_complete" size="30"> <br>
+  <br>
+  
+  Comentario:<br> <input type="text" name="opinioes" size="30"><br>
+  <br> 
+  
+  <input class="btn btn-primary" type="submit" value="Avaliar produto"> <br>
+
+</form>
+     </div>
+   </div>
+</div>
+
+<div class="col-4">
+
+<a class="btn btn-primary" href="" tal:attributes="href string:update_product?id_produto=${options/id_produto}"> Editar produto</a>
+
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+<div metal:use-macro="template/main/selc_avaliacao/macros/selectavaliacao"> </div>
+<br>
+
+  </div>
+
+<br>

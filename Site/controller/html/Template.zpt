@@ -1,0 +1,12 @@
+<html metal:define-macro="page">
+  
+  <head metal:use-macro="template/main/head/macros/cabecalho"> </head>
+
+  <body>
+    
+    <!--slot conteudo prinncipal -->
+    <span metal:define-slot="main_content"></span>
+  
+  </body>
+  <footer metal:use-macro="template/main/footer/macros/rodape"></footer>
+</html>

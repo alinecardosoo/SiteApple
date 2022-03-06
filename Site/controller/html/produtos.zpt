@@ -1,0 +1,56 @@
+<div metal:use-macro="template/main/Template/macros/page">
+<div metal:fill-slot="main_content">
+<body>
+    
+    <img src="/siteappleZPT/img/imgprod" alt="" height="70%" width="100%">
+    <br>
+    <br>
+    <center>
+        <h1 class="capa">
+            <b>Produtos<br>
+            </b>
+        </h1>
+        <center>
+            <h3 class="subiphone">Veja todos os produtos</h3>
+        </center>
+   <hr width="70%">
+    </center>
+    <br>
+
+    <div class="container">
+
+ <center> <h4>Tabela de produtos</h4> </center>
+
+<table>
+<center>
+
+<tr bgcolor="#dcdcdc">
+    
+    <th>Nome</th>
+    <th>Detalhes</th>
+    <th>Preco</th>
+
+  </tr>
+    
+
+<tr tal:repeat="a options/dados">
+
+   <td tal:content="a/nome"> </td>
+
+   <center> <td><a class="btn btn-outline-primary" href="" tal:attributes="href string:details?id_produto=${a/id_produto}"> Ver detalhes </a>
+
+    <a class="btn btn-outline-danger" tal:attributes="onclick string:confirmar_deletar_produto(${a/id_produto})"> Deletar </a></td>
+
+   <td tal:content="a/preco"> </td>
+   
+</tr>
+
+
+</center>
+ </table>
+
+<br>
+ 
+  </body>
+</div>
+</div>
